@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/user/add" shiro:haspermission="user:add">添加</a>
+<a href="/user/select">查询</a>
+<a href="/user/delete" shiro:haspermission="user:delete">删除</a>
+<a href="/user/update" >修改</a>
+<a href="logout">退出</a>
+</body>
