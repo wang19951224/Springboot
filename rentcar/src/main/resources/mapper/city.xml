@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qf.mapper.CityMapper">
+
+    <select id="selectByPid" resultType="com.qf.entity.City">
+    select  * from sys_city where pid=#{pid}
+    </select>
+    <select id="selectById" resultType="com.qf.entity.City">
+    select  * from sys_city where id=#{id}
+    </select>
+   <select id="selectCity"   resultType="com.qf.entity.City" >
+       select  * from sys_city where id in(select  pid from sys_city where id=#{id})
+   </select>
+</mapper>
