@@ -24,7 +24,7 @@
         <h2 data-v-95c8bc32="" class="left" style="display: none;">欢迎注册</h2>
         <h2 data-v-95c8bc32="" class="left" style="display: none;">找回密码</h2>
         <h2 data-v-95c8bc32="" class="left" style="display: none;">重置密码</h2>
-        <a data-v-95c8bc32="" href="index.html" class="right">回到首页</a>
+        <a data-v-95c8bc32="" href="../pagehome/index.html" class="right">回到首页</a>
     </div>
     </div>
     <div data-v-0a99943a="" class="login">
@@ -58,7 +58,7 @@
                                     <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
                             </div>
                             <div data-v-0a99943a="" class="goRegister">
-                                还没有账号？<a data-v-0a99943a="" href="register.html">免费注册</a></div>
+                                还没有账号？<a data-v-0a99943a="" href="../pagehome/register.html">免费注册</a></div>
                         </form>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                 success:function(obj) {
                     console.log(obj.code);
                     if(obj.code == 1) {
-                        window.location.href="loginsuccess.html";
+                        window.location.href="../pagehome/loginsuccess.html";
                     }else {
                         layer.alert(obj.tel);
                     }

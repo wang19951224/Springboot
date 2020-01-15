@@ -15,4 +15,20 @@ public class UserServerImpl implements UserService {
     public User getUserByNameAndPWD(User user) {
         return userMapper.getUserByNameAndPWD(user);
     }
+
+    @Override
+    public Integer register(User user) {
+        return userMapper.register(user);
+    }
+
+    @Override
+    public Integer updateTcl(String tel, Integer id) {
+        return userMapper.updateTcl(tel,id);
+    }
+
+    @Override
+    public User getUserByTel(String tel) {
+        return userMapper.getUserByTel(tel);
+
+    }
 }

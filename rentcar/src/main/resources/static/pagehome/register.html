@@ -91,7 +91,7 @@
                 <div data-v-676ecf83="" class="registerImg right">
                     <h2 data-v-676ecf83="">已有车速递账号？
                         <a data-v-676ecf83="" href="login.html">立即登录&nbsp;&gt;&gt;</a>
-                    </h2> <img data-v-676ecf83="" src="https://www.chesudi.com/static/img/register.256808f.jpg">
+                    </h2>     <img data-v-0a99943a=""   src="../images/login.jpg">
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
         //监听提交
         form.on('submit(demo1)', function(data){
             $.ajax({
-                url:"/carsys/user/register.do",
+                url:"/user/register",
                 type:"post",
                 data:$("form").serialize(),
                 dataType:'json',
@@ -143,7 +143,7 @@
                     }
                 },
                 error: function() {
-                    elert("ajax错误");
+                    alert("账户名已存在");
                 }
             });
             return false;
